@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar compra</title>
+    <link rel="stylesheet" href="/css/buy.css">
+    <script src="https://kit.fontawesome.com/58968ee114.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <span><i class="fa-regular fa-clock"></i> Horario: lunes - viernes de 8:00 - 21:00</span>
+        <span>|</span>
+        <span><i class="fa-solid fa-phone"></i> 91 249 56 57</span>
+    </header>
+    <div class="bg">
+        <a href="index.html"><img src="img/logo.png" width="250px"></a>
+    </div>
+    <nav>
+
+        <a href="index.html">Inicio</a>
+        <a href="productos.html#shopping">Productos</a>
+        <a href="pedidos.html">Pedidos especiales</a>
+
+        <div>
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+    </nav>
+
+    <div class="cart" id="cart">
+        <div class="close-cart"><button id="close-button">X</button></div>
+        <h1><i class="fa-solid fa-cart-shopping"></i> Mi carrito</h1>
+        <div class="cart-delimiter"></div>
+        <div class="product-view">
+            <h4>Pan de chapata</h4>
+            <p>Unidades: 5</p>
+        </div>
+        <div class="product-view">
+            <h4>Chapata Italiana</h4>
+            <p>Unidades: 4</p>
+        </div>
+
+        <div class="product-result">
+            <p>Total: 20€</p>
+            <button>Realizar pedido</button>
+        </div>
+
+    </div>
+
+
+    <main>
+        <div class="cart-web">
+            <form action="">
+                <h1><i class="fa-solid fa-cart-shopping"></i> Mi carrito</h1>
+                <div class="cart-delimiter"></div>
+                <div class="product-view">
+                    <h4>Pan de chapata</h4>
+                    <span>Unidades:</span>
+                    <input type="number" value="5">
+                    <span>Precio: 3.94€</span>
+
+                    <button><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div class="product-view">
+                    <h4>Chapata Italiana</h4>
+                    <span>Unidades:</span>
+                    <input type="number" value="4">
+                    <span>Precio: 2.94€</span>
+                    <button><i class="fa-solid fa-trash"></i></button>
+
+                </div>
+
+                <h1>Datos de pago</h1>
+                <div class="cart-delimiter"></div>
+                <div class="userdata">
+                    <div>
+                        <span>Forma de pago: </span>
+                        <select name="" id="">
+                            <option value="tarjeta">Tarjeta de credito</option>
+                            <option value="contrarreembolso">contrarreembolso</option>
+                            <option value="americaE">American express</option>
+                            <option value="btc">Bitcoin</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <span>Dirección:</span>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div>
+                        <span>Ciudad:</span>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div>
+                        <span>Codigo Postal:</span>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <span>Provincia:</span>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div>
+                        <span>Fecha estimada de entrega: 48h.</span>
+                    </div>
+                    <div>
+                        <span class="total">TOTAL</span>
+                        <span class="total">22,30€ - IVA y envío incluido</span>
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="product-result">
+
+                    <button>Finalizar pedido</button>
+                </div>
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="bottommenu">
+            <h2>Información</h2>
+            <a href="index.html#negocio">¿Quienes somos?</a>
+            <a href="privacidad.html">Política de privacidad</a>
+            <a href="cookies.html">Política de cookies</a>
+            <a href="">Condiciones legales</a>
+        </div>
+
+        <div>
+            <h2>Haz tu pedido</h2>
+            <h3><i class="fa-solid fa-phone"></i> 612 345 678</h3>
+            <p><i class="fa-regular fa-clock"></i> Horario de lunes a viernes de 8:00 a 21:00</p>
+        </div>
+
+        <div class="icons">
+            <h2>Redes sociales</h2>
+            <div>
+                <a href="http://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

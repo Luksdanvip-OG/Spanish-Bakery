@@ -1,0 +1,54 @@
+@import url(/css/style.css);
+
+div.cart-web{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+div.cart-web button{
+    width: 250px;
+    
+}
+
+div.product-view button{
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    border: 2 px black solid;
+}
+div.product-view input{
+    width: 50px;
+    text-align: center;
+}
+div.product-result button{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.userdata{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 4px black solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+div.userdata div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+span.total{
+    margin-top: 5px;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    border: 2px black solid;
+    text-align: center;
+    
+}

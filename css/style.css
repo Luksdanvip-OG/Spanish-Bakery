@@ -1,0 +1,445 @@
+/*
+    importamos fuentes de dafont
+*/
+@font-face {
+    font-family: hello;
+    src: url(/fonts/Hello.ttf);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(/fonts/helvetica-normal.ttf);
+}
+
+
+
+/*
+    Código que tendrán todas las paginas html, el header, el footer y el menú de nav.
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: helvetica;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+    background-color: #31221b;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    position: fixed;
+}
+
+header span {
+    margin-left: 15px;
+}
+
+nav {
+
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    background-size: cover;
+    font-weight: bold;
+    image-rendering: auto;
+    column-gap: 200px;
+    margin-bottom: 50px;
+
+}
+
+nav div {
+    display: flex;
+    column-gap: 50px;
+
+}
+
+nav i{
+    color: #31221b;
+}
+nav i:hover{
+    color: #fdb822;
+    cursor: pointer;
+}
+
+nav a {
+    color: #31221b;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #fdb822;
+    text-decoration: overline;
+}
+/*
+    carrito de compra.
+*/
+div.cart{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 450px;
+    height: 450px;
+    border: 4px #31221b solid;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px -3px rgb(0 0 0 / 23%);
+    background-color: #fff;
+}
+
+div.close-cart{
+    text-align: right;
+}
+div.close-cart button{
+    border: 2px black solid;
+    background-color: white;
+    padding: 5px;
+}
+div.close-cart button:hover{
+    border: 2px black solid;
+    background-color: #fdb822;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+div.product-view{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    display: inline-flex;
+    border: 4px black solid;
+    border-radius: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+div.product-result{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+div.product-result button{
+    padding: 10px;
+    border: 4px #31221b solid;
+    border-radius: 10px;
+    color: #31221b;
+}
+div.product-result button:hover{
+    padding: 10px;
+    border: 4px #fdb822 solid;
+    border-radius: 10px;
+    color: #fdb822;
+}
+
+.cart-delimiter{
+    border-bottom: 4px #fdb822 solid;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+main {
+    width: 100%;
+}
+
+
+
+.centertext {
+    text-align: center;
+}
+
+.lefttext {
+    text-align: left;
+}
+
+.righttext {
+    text-align: right;
+}
+
+footer {
+
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    align-items: center;
+    background-color: #31221b;
+    color: white;
+    text-align: center;
+
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+
+    row-gap: 20px;
+
+
+}
+
+footer h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+
+footer p,
+a {
+    font-size: 14px;
+    color: white;
+
+}
+
+div.bottommenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+div.icons i {
+    color: white;
+    font-size: 30px;
+}
+div.icons i:hover {
+    color: #fdb822;
+    font-size: 40px;
+}
+
+div.icons div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+
+}
+
+div.bg {
+    text-align: center;
+
+}
+
+div.bg img {
+    width: 300px;
+    height: 300px;
+}
+
+/*
+    Aqui va todo el código específico del index.html
+
+    - diseño del contenido -
+*/
+div.info {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+div.info h1 {
+    font-size: 20px;
+}
+
+div.info p {
+    font-size: 14px;
+}
+
+
+div.delimiter {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-bottom: 7px #31221b solid;
+}
+
+div.delimiter-text {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px #fdb822 solid;
+}
+
+div.info-container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 80px;
+
+}
+
+div.info-container-review {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+
+
+
+
+}
+
+div.info-container i {
+    font-size: 70px;
+    color: #31221b;
+}
+
+div.info-container h4 {
+    font-size: 18px;
+}
+
+div.info-container p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.card-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px;
+
+
+    border: 5px #fdb822 solid;
+    border-radius: 20px;
+
+}
+
+div.card-info-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    margin-top: 20px;
+    width: 250px;
+
+    padding: 5px;
+
+    border: 4px #31221b solid;
+    border-radius: 20px;
+
+    color: #31221b;
+
+}
+
+div.card-info-review p {
+    font-size: 14px;
+}
+
+div.card-info-review h4 {
+    font-size: 16px;
+}
+
+div.card-info h4 {
+    text-transform: uppercase;
+}
+
+div.bg-slogan {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+div.bg-slogan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+div.bg-slogan div {
+    width: 1200px;
+    height: 80px;
+    position: absolute;
+
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+
+
+}
+
+div.bg-slogan h1 {
+
+    font-size: 70px;
+    color: white;
+    font-family: hello;
+    text-align: center;
+
+
+}
+
+div.info h1 {
+    color: black;
+    font-size: 30px;
+}
+
+button.btn-review {
+    margin-top: 50px;
+    width: 160px;
+    height: 50px;
+    border-radius: 2rem;
+    border: 3px #fdb822 solid;
+    background-color: white;
+    font-weight: bold;
+    color: #fdb822;
+    padding: 3px;
+}
+
+button.btn-review:hover {
+
+    border-radius: 2rem;
+    border: 3px #31221b solid;
+    color: #31221b;
+    background-color: white;
+}
